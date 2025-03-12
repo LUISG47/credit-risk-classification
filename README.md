@@ -4,7 +4,7 @@
 
 In this assignment we'll use several techniques to train and evaluate a model based on loan risk. We will use a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
 
-## Finantial information description
+## Financial information description
 
 For the assignment we will use a dataset that contains this information:
 
@@ -27,7 +27,7 @@ So we will take that variable as the target variable for the analysis
 
 ## Stages of the Machine Learning Model
 
-## Linear Regression Model
+# Linear Regression Model
 
 ### Step 1
 
@@ -60,29 +60,27 @@ For our linear regression model we obtained these results:
 ![Screenshot 2025-03-11 at 10 11 58 p m](https://github.com/user-attachments/assets/05586f5c-5fe7-4db5-bfce-1b7e961ba962)
 
 
-## Conclussions of linear regression model
+## Conclusions of linear regression model
 
 **Question:** How well does the logistic regression model predict both the `0` (healthy loan) and `1` (high-risk loan) labels?
 
 **Answer:** 
-The model does a god job in identifying the healthy loans and high risk loans
-As we can see on the confussion matrix we have a 18'658 results on predicted and actual positives and 582 cases on predicted negatives and actual negatives.
+The model does an excellent job of identifying healthy and high-risk loans. As we can see in the confusion matrix, we have 18,658 predicted and actual positive results, and 582 predicted and actual negative results.
 
-Also our classification reports tells us there's a precision of 84% so loans predicted as high risk got an almost 85% of accuracy in detecting them
-The recall identified 94% of actual high risk loans with only 110 loans missed
-The F1-Score indicated a good balance of precision and recall for high risk loans.
+Furthermore, our classification reports indicate an accuracy of 84%, so the loans predicted as high-risk had an accuracy of almost 85% in their detection. Recall identified 94% of the actual high-risk loans, with only 110 loans missed. The F1 score indicated a good balance between accuracy and recall for high-risk loans.
 
-The overall performance gives us that we have a 99% accuracy telling us that it predicted correctly the loan status on most of the cases.
-The macro average having a .92 tells us that maybe there is a level of unbalance in our data so we can take this into account.
-And finally the weighted average reflects that the model performs very well overall.
+The overall performance gives us an accuracy of 99%, indicating that it correctly predicted the loan status in most cases.
+The macro average, at 0.92, indicates that there may be some level of imbalance in our data, so we can account for it.
+Finally, the weighted average reflects that the model performs very well overall.
 
-## Random Forest Classifier Model
+# Random Forest Classifier Model
+
 
 For this model we will follow these steps for the analysis
 
 ### Step 1
 
-# Split the data into training and testing sets and scale the feature data 
+Split the data into training and testing sets and scale the feature data 
 
 ### Step 2
 
@@ -96,16 +94,27 @@ For this model we obtained the following results
 
 ![Screenshot 2025-03-11 at 10 10 40 p m](https://github.com/user-attachments/assets/30bf01e5-eb58-4852-9da2-65bca1da8dcf)
 
-## Conclussions of Random Forest Classifier
+## Conclusions of Random Forest Classifier
 
+The model also does an excellent job of identifying healthy and high-risk loans.
+As we can see in the confusion matrix, we have 18,666 predicted and actual positive results, and 553 predicted and actual negative results.
 
+Furthermore, our classification reports indicate an accuracy of 85%, so the loans predicted as high-risk had a high accuracy score.
+Recall identified 89% of the actual high-risk loans, with only 99 loans missed.
+The F1 score also indicated a good balance between accuracy and recall for high-risk loans.
 
-# Final Conclussions
+The overall performance gives us an accuracy of 99%, indicating that it correctly predicted the loan status in most cases.
+The macro average, at 0.92, indicates that there may be some level of imbalance in our data, so we can consider a conclusion we already reached in the linear regression model.
+And finally, the weighted average reflects that the model performs very well overall.
 
+# Final Conclusions
 
+If we compare the linear regression model and the random forest model we can get to these conclusions
 
+1. Linear Regression model shows a slightly better overall performance in terms of identifying high-risk loans due to its higher recall and F1-score despite having slightly lower precision.
+2. Random Forest has a minor advantage in precision, but it has more false positives and does not outperform Linear Regression in key metrics like recall and F1-score.
 
-
+Based on the analysis, the Linear Regression model emerges as the superior choice in this context, as it demonstrates a strong ability to identify high-risk loans while maintaining a favorable balance between precision and recall. This capability renders it more dependable for accurately detecting such loans. Nonetheless, the decision between the models may also hinge on the specific application requirements and the acceptable thresholds for false positives and false negatives in the given situation.
 
 
 
