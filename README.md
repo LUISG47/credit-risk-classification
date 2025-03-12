@@ -27,7 +27,7 @@ So we will take that variable as the target variable for the analysis
 
 ## Stages of the Machine Learning Model
 
-### Linear Regression Model
+## Linear Regression Model
 
 ### Step 1
 
@@ -57,5 +57,64 @@ We will Evaluate the model’s performance by doing the following:
 
 For our linear regression model we obtained these results:
 
-![Screenshot 2025-03-11 at 9 45 01 p m](https://github.com/user-attachments/assets/d12fb291-cc7e-4624-8290-0624694d5e97)
+![Screenshot 2025-03-11 at 10 11 58 p m](https://github.com/user-attachments/assets/05586f5c-5fe7-4db5-bfce-1b7e961ba962)
+
+
+## Conclussions of linear regression model
+
+**Question:** How well does the logistic regression model predict both the `0` (healthy loan) and `1` (high-risk loan) labels?
+
+**Answer:** 
+The model does a god job in identifying the healthy loans and high risk loans
+As we can see on the confussion matrix we have a 18'658 results on predicted and actual positives and 582 cases on predicted negatives and actual negatives.
+
+Also our classification reports tells us there's a precision of 84% so loans predicted as high risk got an almost 85% of accuracy in detecting them
+The recall identified 94% of actual high risk loans with only 110 loans missed
+The F1-Score indicated a good balance of precision and recall for high risk loans.
+
+The overall performance gives us that we have a 99% accuracy telling us that it predicted correctly the loan status on most of the cases.
+The macro average having a .92 tells us that maybe there is a level of unbalance in our data so we can take this into account.
+And finally the weighted average reflects that the model performs very well overall.
+
+## Random Forest Classifier Model
+
+For this model we will follow these steps for the analysis
+
+### Step 1
+
+# Split the data into training and testing sets and scale the feature data 
+
+### Step 2
+
+Instantiate the Random Forest Classifier, Fit the model using the scaled training data and Make predictions using the testing data
+
+### Step 3
+
+Generate a confusion matrix for the Random Forest model and Print the classification report for the Random Forest model
+
+For this model we obtained the following results
+
+![Screenshot 2025-03-11 at 10 10 40 p m](https://github.com/user-attachments/assets/30bf01e5-eb58-4852-9da2-65bca1da8dcf)
+
+## Conclussions of Random Forest Classifier
+
+
+
+# Final Conclussions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
